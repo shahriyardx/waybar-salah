@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "waybar-salah"
 version = "0.1.0"
-description = "Islamic prayer times widget for Waybar — Dhaka, Bangladesh"
+description = "Islamic prayer times widget for Waybar"
 readme = "README.md"
 license = "MIT"
 authors = [
