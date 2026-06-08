@@ -11,7 +11,7 @@ license = "MIT"
 authors = [
     {name = "Md Shahriyar Alam", email = "contact@shahriyar.dev"},
 ]
-keywords = ["waybar", "prayer-times", "islamic", "adhan", "salah", "dhaka"]
+keywords = ["waybar", "prayer-times", "islamic", "adhan", "salah"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Desktop Environment :: Window Managers",

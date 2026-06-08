@@ -1,6 +1,6 @@
 # Prayer Times — Waybar Widget
 
-Shows Islamic prayer times in your status bar for Dhaka, Bangladesh.
+Shows Islamic prayer times in your status bar — auto-detects location via IP.
 
 ## What it does
 
