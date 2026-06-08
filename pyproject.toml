@@ -1,0 +1,31 @@
+[project]
+name = "waybar-salah"
+version = "0.1.0"
+description = "Islamic prayer times widget for Waybar — Dhaka, Bangladesh"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "Md Shahriyar Alam", email = "contact@shahriyar.dev"},
+]
+keywords = ["waybar", "prayer-times", "islamic", "adhan", "salah", "dhaka"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Desktop Environment :: Window Managers",
+    "Environment :: X11 Applications",
+    "Intended Audience :: End Users/Desktop",
+]
+
+requires-python = ">=3.8"
+dependencies = ["requests"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["main"]
+
+[project.urls]
+Homepage = "https://github.com/shahriyardx/waybar-salah"
+Source = "https://github.com/shahriyardx/waybar-salah"
+BugTracker = "https://github.com/shahriyardx/waybar-salah/issues"
+
+[project.scripts]
+waybar-salah = "main:main"
