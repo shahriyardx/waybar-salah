@@ -17,6 +17,20 @@ Shows Islamic prayer times in your status bar for Dhaka, Bangladesh.
 
 ## Installation
 
+### From PyPI (recommended)
+
+```bash
+uv tool install waybar-salah
+```
+
+Or with pip:
+
+```bash
+pip install waybar-salah
+```
+
+### From source
+
 Requires [uv](https://docs.astral.sh/uv/).
 
 ```bash
@@ -34,10 +48,10 @@ Then add to your Waybar config:
 
 ```json
 "custom/prayer": {
-    "exec": "prayer-times",
+    "exec": "waybar-salah",
     "return-type": "json",
     "interval": 30,
-    "on-click": "prayer-times --toggle",
+    "on-click": "waybar-salah --toggle",
     "tooltip": true
 }
 ```
@@ -52,7 +66,7 @@ Add some CSS to colour the states:
 
 ## Customisation
 
-Open `src/prayer_times/cli.py` and change `CITY`, `COUNTRY`, or `METHOD` at the top.
+Open `src/waybar_salah/main.py` and change `CITY`, `COUNTRY`, or `METHOD` at the top.
 
 | Method | Organisation |
 |--------|-------------|
@@ -65,7 +79,7 @@ Open `src/prayer_times/cli.py` and change `CITY`, `COUNTRY`, or `METHOD` at the 
 ## Files
 
 ```
-src/prayer_times/cli.py   # main logic
-pyproject.toml            # package config
-cache.json                # daily timings (auto-generated in ~/.cache/prayer-times/)
+src/waybar_salah/main.py     # main logic
+pyproject.toml               # package config
+cache.json                   # daily timings (auto-generated)
 ```

@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "waybar-salah"
 version = "0.1.0"
@@ -18,9 +22,9 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = ["requests"]
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-py-modules = ["main"]
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+only-include = ["main.py"]
 
 [project.urls]
 Homepage = "https://github.com/shahriyardx/waybar-salah"

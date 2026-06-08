@@ -1,1 +1,2 @@
-"""Islamic prayer times widget for Waybar — Dhaka, Bangladesh."""
+"""Islamic prayer times widget for Waybar."""
+from .main import main
